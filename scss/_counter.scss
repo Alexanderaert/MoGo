@@ -1,0 +1,56 @@
+.counter{
+   background-color: #95e1d3;
+   padding: 0;
+   color: #fff;
+   font-family: Montserrat;
+   font-weight: 400;
+   font-size: 16px;
+   text-transform: uppercase;
+
+   &_item{
+      flex: 0 0 100%;
+      padding: 76px 0;
+      border-bottom: 1px solid #ffffff31;
+
+      h5{
+         font-size: 72px;
+         line-height: 72px;
+         margin-bottom: 30px;
+         font-weight: 700;
+      }
+
+      p{
+         line-height: 16px;
+         margin: 0;
+      }
+
+      &:last-child{
+         border-bottom: none;
+      }
+
+      @media(min-width: 768px){
+         flex: 0 0 50%;
+         border-right: 1px solid #ffffff31;
+
+         &:nth-child(2n), &:last-child{
+            border-right: none;
+         }
+
+         &:last-child{
+            flex: 0 0 100%;
+         }
+      }
+
+      @media(min-width: 992px){
+         flex: 0 0 20%;
+         border-bottom: none;
+
+         &:nth-child(2n){
+            border-right: 1px solid #ffffff31;
+         }
+         &:last-child{
+            flex: 0 0 20%;
+         }
+      }
+   }
+}

@@ -1,0 +1,104 @@
+.feedbacks{
+   background: url("./image/Layer_53.png") center center no-repeat;
+   background-size: cover;
+   position: relative;
+
+   &::before{
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.85);
+   }
+
+   &_post_container{
+      margin: 57px 0 0;
+
+      @media(min-width: 768px){
+         margin-top: 87px;
+      }
+   }
+   &_post{
+      margin-bottom: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+
+      &:last-child{
+         margin-bottom: 0;
+      }
+
+      img{
+         width: 60px;
+         height: auto;
+         border-radius: 200px;
+         padding-right: 15px;
+
+         @media(min-width: 992px){
+            width: 130px;
+            padding-right: 30px;
+         }
+      }
+
+      &_text{
+         flex: 0 0 70%;
+
+         h3{
+            font-size: 14px;
+            text-align: left;
+            margin-bottom: 15px;
+            line-height: normal;
+         }
+
+         h5{
+            font-style: italic;
+            font-size: 15px;
+            padding-bottom: 17px;
+            margin-bottom: 24px;
+         }
+      }
+
+      @media(min-width: 768px){
+         margin-bottom: 68px;
+
+         &:nth-last-child(-n+2){
+            margin-bottom: 0;
+         }
+      }
+   }
+}
+
+// .feedbacks_post{
+//    display: flex;
+//    align-items: center;
+//    flex-direction: column;
+//    margin: 40px 0;
+// }
+// .feedbacks_post > img{
+//    margin: 0 30px 30px 0;
+//    border-radius: 50%;
+// }
+// .feedbacks_post_text{
+//    position: relative;
+
+//    display: flex;
+//    flex-direction: column;
+//    align-items: center;
+
+// }
+// .feedbacks_post_text > h3, .feedbacks_post_text > h5{
+//    margin: 0;
+//    padding: 0;
+//    text-align: left;
+//    position: relative;
+// }
+// .feedbacks_post_text > h5{
+//    padding: 15px 0 44px;
+// }
+// .feedbacks_post_text > p{
+//    margin: 0;
+//    text-align: center;
+//    max-width: 380px;
+// }

@@ -1,0 +1,40 @@
+.amazing_services_item{
+   padding: 30px 0px;
+   border-bottom: 1px solid #e5e5e5;
+
+   &:last-child{
+      border-bottom: none;
+   }
+
+   img{
+      flex: 0 0 15%;
+      max-width: 32px;
+      margin-right: auto;
+      display: block;
+   }
+
+   div{
+      flex: 0 0 auto;
+      max-width: 85%;
+   }
+
+   @media(min-width:768px){
+      padding: 50px 0;
+
+      &:nth-last-child(-n+2){
+         border-bottom: none;
+         padding-bottom: 0;
+      }
+
+      div{
+         padding-right: 30px;
+      }
+   }
+
+   @media(min-width:992px){
+      &:nth-last-child(-n+3){
+         border-bottom: none;
+         padding-bottom: 0;
+      }
+   }
+}
