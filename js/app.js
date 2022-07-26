@@ -20,7 +20,7 @@ $('.active_search').click(function(){
    $('.button_item_search').toggleClass('active');
 });
 
-function bulletName () {
+function setNameBullet () {
    const titleBullet = document.querySelectorAll('.banner_item span');
    const numBullet   = document.querySelectorAll('#slider_baner .swiper-pagination span');
    let arrayNmae = [];
@@ -143,7 +143,7 @@ var swiper = new Swiper(".mySwiper_blog", {
     }
 });
 
-function gellertWork(heightResize){
+function setArtGalleryHeight(heightResize){
    const gelleryImg = document.querySelectorAll('.work_item > a > img');
    let maxHeight = [];
 
@@ -158,7 +158,7 @@ function gellertWork(heightResize){
    : $('.work_list').css('max-height', `100%`);
 }
 
-function blogH4Height() {
+function setHeightTitleBlog() {
    const blogItem = document.querySelectorAll('.blog_item h4 + p');
    let blogHeightH4 = [];
 
@@ -173,15 +173,15 @@ function blogH4Height() {
 
 $(window).resize(function() {
    if(document.documentElement.clientWidth > 768) {
-      gellertWork();
+      setArtGalleryHeight();
    } else {
-      gellertWork(true);
+      setArtGalleryHeight(true);
    }
 
-   blogH4Height();
+   setHeightTitleBlog();
 });
 
-blogH4Height();
-gellertWork();
-bulletName();
+setHeightTitleBlog();
+setArtGalleryHeight();
+setNameBullet();
 menuUp();
